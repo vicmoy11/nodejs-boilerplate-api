@@ -5,3 +5,4 @@ const swaggerDocument = YAML.load('./swagger.yaml'); // Load your Swagger specif
 module.exports = function(app) {
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 };
+
